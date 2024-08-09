@@ -8,11 +8,8 @@ from submissions.blue import policy as blue_policy
 env = SnakeEatBeans()
 obs = env.reset(render=True)
 
-
 action_dim = env.get_action_dim()
 num_player = len(env.players)
-
-
 
 while not env.is_terminal():
     
@@ -23,7 +20,6 @@ while not env.is_terminal():
 
     next_obs, reward, terminal, info = env.step(all_actions)
 
-    
+    state = env.get_global_state()
     
 print(env.check_win())
-
