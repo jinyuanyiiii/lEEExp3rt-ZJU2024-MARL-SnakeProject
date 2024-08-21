@@ -6,7 +6,7 @@ from submissions.blue import policy as blue_policy
 
 
 env = SnakeEatBeans()
-obs = env.reset(render=False) # render=True to see the game
+obs = env.reset(render=True) # render=True to see the game
 
 action_dim = env.get_action_dim()
 num_player = len(env.players)

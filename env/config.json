@@ -4,7 +4,7 @@
     "n_player": 6,
     "board_width": 50,
     "board_height": 25,
-    "cell_range": 15,
+    "cell_range": 10,
     "n_beans": 10,
     "max_step": 400,
     "game_name": "snakes",
